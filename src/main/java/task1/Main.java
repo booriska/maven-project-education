@@ -11,6 +11,16 @@ public class Main {
 	}
 
 	public static void first(){
+		Person person1 = new Person();
+		Name name = new Name();
+		name.firstName = "Vasya";
+		name.lastName = "Petrov";
+		person1.name = name;
+
+		Person person2 = new Person();
+
+
+		System.out.println();
 		// TODO: 1/26/20 ПЕРВЫЙ ЭТАП создать 5 разных человек и вывести имя старшего
 
 	}
@@ -26,7 +36,6 @@ class Name {
 
 	String firstName;
 	String lastName;
-
 }
 
 class BirthDate {
@@ -38,6 +47,10 @@ class BirthDate {
 }
 
 class Person {
+	public Person() {
+		System.out.println("New person arrived!");
+		System.out.println(this);
+	}
 
 	Name name;
 	BirthDate birthDate;
