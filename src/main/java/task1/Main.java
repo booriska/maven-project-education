@@ -12,12 +12,26 @@ public class Main {
 
 	public static void first(){
 		Person person1 = new Person();
-		Name name = new Name();
-		name.firstName = "Vasya";
-		name.lastName = "Petrov";
-		person1.name = name;
+		Name name1 = new Name();
+		name1.firstName = "Vasya";
+		name1.lastName = "Petrov";
+		person1.name = name1;
 
 		Person person2 = new Person();
+		Name name2 = new Name();
+		name2.firstName = "Semen";
+		name2.lastName = "Kozlov";
+		person2.name = name2;
+
+		Person person3 = new Person();
+		Name name3 = new Name();
+		name3.firstName = "Oleg";
+		name3.lastName = "Oslov";
+		person3.name = name3;
+
+
+
+
 
 
 		System.out.println();
@@ -36,6 +50,7 @@ class Name {
 
 	String firstName;
 	String lastName;
+
 }
 
 class BirthDate {
@@ -43,6 +58,7 @@ class BirthDate {
 	int year;
 	int month;
 	int day;
+
 
 }
 
